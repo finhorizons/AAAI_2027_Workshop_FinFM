@@ -938,6 +938,16 @@ summary:focus-visible {
   color: var(--muted);
   max-width: 320px;
 }
+.committee-apply {
+  margin-top: 24px;
+  max-width: 100%;
+  text-align: center;
+}
+.committee-status .committee-note {
+  margin-top: 18px;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
 .committee-mark {
   position: absolute;
   right: 30px;

@@ -32,7 +32,7 @@ The repository is private. If GitHub reports that the owner's plan does not supp
 
 - The attached FinFM proposal is the source for the workshop scope and organizing committee.
 - **Date, session times, keynote speakers, invited speakers, and panelists are unconfirmed.** No proposed speaker names or detailed timetable are published.
-- **Program Committee names are intentionally omitted**, following the organizer's instruction. The dedicated section announces that membership is being finalized.
+- **Program Committee names are intentionally omitted**, following the organizer's instruction. The dedicated section links to the PC interest form and explains that membership will be confirmed separately.
 - October 2, November 20, and December 2, 2026 are **tentative proposal dates**, visibly labeled as such. Deadline time and time zone remain unannounced.
 - Full papers are described as up to seven pages plus references in AAAI format. Benchmark-track details, OpenReview URL, proceedings arrangements, and awards remain subject to final announcement.
 - No submission button points to a placeholder or unrelated OpenReview venue.
@@ -40,6 +40,12 @@ The repository is private. If GitHub reports that the owner's plan does not supp
 - Organizer affiliations are labeled as affiliations, not sponsors or institutional endorsements.
 
 Before publication, the organizers should confirm the final workshop status and any updates to the proposal. The proposal PDF and its unconfirmed invitee lists are not included in the website.
+
+## Program Committee recruitment
+
+The **Join the Program Committee** button in `#committee` opens the [Google Forms interest form](https://docs.google.com/forms/d/e/1FAIpQLSdWEmFMBN3IYrSvQPDWwwyc_pkfj-sQS8U26I1dKXxN2pD4YQ/viewform?usp=header).
+
+The form has five required questions: full name, email address, institutional affiliation, top-conference paper count (1 / 2 / 3 or more), and paper-bidding capacity (1 / 2 / 3 / 4 or more). Submission expresses interest; it does not confirm a PC appointment. Responses are managed privately in Google Forms, and response summaries are not shared with applicants.
 
 ## Accessibility and behavior
 
