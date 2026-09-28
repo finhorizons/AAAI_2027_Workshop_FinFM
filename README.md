@@ -8,18 +8,13 @@ A responsive, build-free static website using HTML, CSS, and a small JavaScript 
 
 Open `index.html` directly, or run `python -m http.server 4173` in this directory and visit `http://localhost:4173`.
 
-## Publish with GitHub Pages
+## Live website and deployment
 
-An owner or administrator of `finhorizons/AAAI_2027_Workshop_FinFM` must enable Pages:
+**[Visit the FinFM 2027 website](https://finhorizons.github.io/AAAI_2027_Workshop_FinFM/)**
 
-1. Open **Settings → Pages**.
-2. Under **Build and deployment**, select **Deploy from a branch**.
-3. Select **main** and **/ (root)**, then save.
-4. Wait for the Pages deployment to finish and use the URL shown by GitHub.
+The repository is public, and the GitHub Pages deployment was verified on September 29, 2026 (KST). Pages publishes the static site from `main` at the repository root. Relative asset paths support the project subdirectory.
 
-The expected project URL is `https://finhorizons.github.io/AAAI_2027_Workshop_FinFM/`. This is an expected URL, not confirmation that publishing is enabled. Relative asset paths support this project subdirectory.
-
-The repository is private. If GitHub reports that the owner's plan does not support Pages for a private repository, the owner must choose an eligible plan or another hosting arrangement. Do not change repository visibility without the owner's explicit approval.
+To update the live site, commit the revised files to `main`, then check **Actions → pages build and deployment** for a successful run. Pages settings are managed by the repository owner under **Settings → Pages**.
 
 ## Editing content
 
@@ -39,7 +34,7 @@ The repository is private. If GitHub reports that the owner's plan does not supp
 - Yichen Li has an intentional initials treatment until a verified portrait is supplied.
 - Organizer affiliations are labeled as affiliations, not sponsors or institutional endorsements.
 
-Before publication, the organizers should confirm the final workshop status and any updates to the proposal. The proposal PDF and its unconfirmed invitee lists are not included in the website.
+The organizers should update the site as workshop details are confirmed. The proposal PDF and its unconfirmed invitee lists are not included in the website.
 
 ## Program Committee recruitment
 
