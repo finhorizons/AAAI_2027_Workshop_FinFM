@@ -175,7 +175,7 @@ summary:focus-visible {
   align-items: center;
   justify-content: space-between;
   min-height: 84px;
-  gap: 30px;
+  gap: 20px;
 }
 .wordmark {
   display: inline-flex;
@@ -226,6 +226,7 @@ summary:focus-visible {
   align-items: center;
   gap: 25px;
   font-size: 0.875rem;
+  margin-left: auto;
 }
 .primary-nav > a {
   white-space: nowrap;
@@ -246,6 +247,25 @@ summary:focus-visible {
 }
 .nav-contact:hover {
   background: #e9efdf;
+}
+.header-pc {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: 5px;
+  background: var(--forest);
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+.header-pc:hover {
+  background: #325745;
 }
 .menu-toggle {
   display: none;
@@ -1110,12 +1130,19 @@ summary:focus-visible {
 @media (max-width: 900px) {
   .header-inner {
     min-height: 74px;
+    gap: 10px;
+  }
+  .header-pc {
+    margin-left: auto;
+    padding-inline: 12px;
+    font-size: 0.75rem;
   }
   .wordmark {
     font-size: 1.7rem;
   }
   .menu-toggle {
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1313,6 +1340,14 @@ summary:focus-visible {
   }
   .site-footer p {
     margin-right: auto;
+  }
+}
+@media (max-width: 380px) {
+  .header-inner .wordmark {
+    font-size: 1.4rem;
+  }
+  .header-inner .brand-year {
+    display: none;
   }
 }
 @media (max-width: 640px) {

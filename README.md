@@ -43,7 +43,7 @@ Before publication, the organizers should confirm the final workshop status and 
 
 ## Program Committee recruitment
 
-The **Join the Program Committee** button in `#committee` opens the [Google Forms interest form](https://docs.google.com/forms/d/e/1FAIpQLSdWEmFMBN3IYrSvQPDWwwyc_pkfj-sQS8U26I1dKXxN2pD4YQ/viewform?usp=header).
+The **Join PC** button in the sticky header, the **Join the Program Committee** link in the hero, and the button in `#committee` all open the [Google Forms interest form](https://docs.google.com/forms/d/e/1FAIpQLSdWEmFMBN3IYrSvQPDWwwyc_pkfj-sQS8U26I1dKXxN2pD4YQ/viewform?usp=header). The header button remains visible on mobile without opening the navigation menu.
 
 The form has five required questions: full name, email address, institutional affiliation, top-conference paper count (1 / 2 / 3 or more), and paper-bidding capacity (1 / 2 / 3 / 4 or more). Submission expresses interest; it does not confirm a PC appointment. Responses are managed privately in Google Forms, and response summaries are not shared with applicants.
 
