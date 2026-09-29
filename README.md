@@ -10,9 +10,9 @@ Open `index.html` directly, or run `python -m http.server 4173` in this director
 
 ## Live website and deployment
 
-**[Visit the FinFM 2027 website](https://finhorizons.github.io/AAAI_2027_Workshop_FinFM/)**
+**[Visit the FinFM 2027 website](https://finfm.finhorizons.org/)**
 
-The repository is public, and the GitHub Pages deployment was verified on September 29, 2026 (KST). Pages publishes the static site from `main` at the repository root. Relative asset paths support the project subdirectory.
+The repository is public, and the GitHub Pages deployment was verified on September 29, 2026 (KST). Pages publishes the static site from `main` at the repository root. The owner's `CNAME` points to `finfm.finhorizons.org`; preserve it when updating the site. Relative asset paths also support the project subdirectory.
 
 To update the live site, commit the revised files to `main`, then check **Actions → pages build and deployment** for a successful run. Pages settings are managed by the repository owner under **Settings → Pages**.
 
@@ -26,9 +26,10 @@ To update the live site, commit the revised files to `main`, then check **Action
 ## Editorial status
 
 - The attached FinFM proposal is the source for the workshop scope and organizing committee.
-- **Date, session times, keynote speakers, invited speakers, and panelists are unconfirmed.** No proposed speaker names or detailed timetable are published.
-- **Program Committee names are intentionally omitted**, following the organizer's instruction. The dedicated section links to the PC interest form and explains that membership will be confirmed separately.
-- October 2, November 20, and December 2, 2026 are **tentative proposal dates**, visibly labeled as such. Deadline time and time zone remain unannounced.
+- The **tentative 09:00–17:00 program** follows `FinFM_AAAI27_Schedule.docx`, supplied on September 29, 2026. The workshop will take place on **February 22 or 23, 2027**, at Palais des congrès de Montréal; the final day remains unconfirmed. Times are displayed as local to Montréal.
+- **Keynote speakers, invited speakers, and panelists are unconfirmed.** Their names, affiliations, and proposed keynote titles are omitted. The source documents containing these candidates are not published.
+- **Program Committee names are intentionally omitted**, following the organizer's instruction. Public recruitment has closed; the committee will be assembled through direct invitations after verification of relevant publications.
+- The organizer approved submission opening on **October 2, 2026 at 00:00 AoE (UTC−12)** and closing on **November 20, 2026 at 23:59 AoE**. Author notifications are planned for December 2, 2026. The workshop day remains tentative.
 - Full papers are described as up to seven pages plus references in AAAI format. Benchmark-track details, OpenReview URL, proceedings arrangements, and awards remain subject to final announcement.
 - No submission button points to a placeholder or unrelated OpenReview venue.
 - Yichen Li has an intentional initials treatment until a verified portrait is supplied.
@@ -36,11 +37,11 @@ To update the live site, commit the revised files to `main`, then check **Action
 
 The organizers should update the site as workshop details are confirmed. The proposal PDF and its unconfirmed invitee lists are not included in the website.
 
-## Program Committee recruitment
+## Program Committee invitations
 
-The **Join PC** button in the sticky header, the **Join the Program Committee** link in the hero, and the button in `#committee` all open the [Google Forms interest form](https://docs.google.com/forms/d/e/1FAIpQLSdWEmFMBN3IYrSvQPDWwwyc_pkfj-sQS8U26I1dKXxN2pD4YQ/viewform?usp=header). The header button remains visible on mobile without opening the navigation menu.
+On September 29, 2026, the organizer instructed that public PC recruitment end and be replaced by direct invitations of researchers with verified relevant publications. The Google Forms interest form no longer accepts responses; existing records remain in the owner's account.
 
-The form has five required questions: full name, email address, institutional affiliation, top-conference paper count (1 / 2 / 3 or more), and paper-bidding capacity (1 / 2 / 3 / 4 or more). Submission expresses interest; it does not confirm a PC appointment. Responses are managed privately in Google Forms, and response summaries are not shared with applicants.
+The header and hero now link to the program. The committee section explains the invitation process and that confirmed members will be announced later. No public recruitment form link is included on the website.
 
 ## Accessibility and behavior
 

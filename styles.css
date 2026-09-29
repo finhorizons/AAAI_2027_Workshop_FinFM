@@ -248,7 +248,7 @@ summary:focus-visible {
 .nav-contact:hover {
   background: #e9efdf;
 }
-.header-pc {
+.header-action {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -264,7 +264,7 @@ summary:focus-visible {
   white-space: nowrap;
   transition: background 0.2s;
 }
-.header-pc:hover {
+.header-action:hover {
   background: #325745;
 }
 .menu-toggle {
@@ -444,6 +444,11 @@ summary:focus-visible {
   font-size: 0.9rem;
   margin-top: 5px;
   font-weight: 500;
+}
+.event-bar .small-note {
+  display: block;
+  white-space: normal;
+  margin-top: 4px;
 }
 .small-note {
   font-weight: 400;
@@ -751,6 +756,12 @@ summary:focus-visible {
   letter-spacing: 0;
   margin-left: 3px;
 }
+.date-detail {
+  display: block;
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin-top: 7px;
+}
 .date-list .date-highlight {
   border-top: 1px solid #aabb9b;
 }
@@ -796,40 +807,68 @@ summary:focus-visible {
   background: transparent;
   color: #e0eccc;
 }
-.program-row {
-  display: grid;
-  grid-template-columns: 32px 1fr 1.25fr 0.8fr;
-  gap: 28px;
-  align-items: center;
-  padding: 30px 0;
-  border-top: 1px solid #45614d;
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
 }
-.program-row:last-child {
+.schedule-table caption {
+  text-align: left;
+  color: #d7e4c6;
+  font-size: 0.875rem;
+  padding-bottom: 24px;
+}
+.schedule-table thead th {
+  padding: 0 24px 16px;
+  color: #b7cca6;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.schedule-table td {
+  padding: 21px 24px;
+  border-top: 1px solid #45614d;
+  vertical-align: top;
+}
+.schedule-table tbody tr:last-child td {
   border-bottom: 1px solid #45614d;
 }
-.program-number {
-  font-size: 0.75rem;
-  color: #b7cca6;
-}
-.program-row h3 {
-  font-size: 1.25rem;
-  letter-spacing: -0.025em;
-  line-height: 1.4;
-}
-.program-row p {
-  font-size: 0.875rem;
-  color: #c6d4bb;
-  max-width: 345px;
-}
-.program-status {
-  font-size: 0.75rem;
+.schedule-table td:first-child {
+  width: 200px;
+  white-space: nowrap;
   color: #d7e4c6;
-  text-align: right;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 24px;
+}
+.session-title {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.session-detail {
+  display: block;
+  color: #c6d4bb;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+.schedule-break {
+  background: #ffffff06;
+}
+.schedule-break .session-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #d7e4c6;
 }
 .program-footnote {
   font-size: 0.8125rem;
   color: #c6d4bb;
   margin-top: 24px;
+}
+.program-footnote + .program-footnote {
+  margin-top: 8px;
 }
 .people-grid {
   display: grid;
@@ -1103,10 +1142,6 @@ summary:focus-visible {
   .small-note {
     display: block;
   }
-  .program-row {
-    gap: 20px;
-    grid-template-columns: 22px 1fr 1fr 0.75fr;
-  }
   .people-grid {
     gap: 16px;
   }
@@ -1132,7 +1167,7 @@ summary:focus-visible {
     min-height: 74px;
     gap: 10px;
   }
-  .header-pc {
+  .header-action {
     margin-left: auto;
     padding-inline: 12px;
     font-size: 0.75rem;
@@ -1297,14 +1332,6 @@ summary:focus-visible {
   .dates-heading {
     flex-wrap: wrap;
     gap: 10px;
-  }
-  .program-row {
-    grid-template-columns: 22px 1fr 1fr;
-  }
-  .program-status {
-    grid-column: 2/4;
-    text-align: left;
-    margin-top: -13px;
   }
   .people-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1568,26 +1595,29 @@ summary:focus-visible {
   .program-section .section-heading > div + div {
     margin-top: 24px;
   }
-  .program-row {
-    grid-template-columns: 21px 1fr;
-    gap: 12px 15px;
-    padding-block: 24px;
+  .schedule-table caption {
+    font-size: 0.8125rem;
+    padding-bottom: 20px;
   }
-  .program-row h3 {
-    font-size: 1.15rem;
+  .schedule-table thead th {
+    padding: 0 0 14px;
   }
-  .program-row p {
-    grid-column: 2;
-    max-width: none;
+  .schedule-table td {
+    padding: 18px 0;
   }
-  .program-status {
-    grid-column: 2;
-    margin-top: 0;
-    font-size: 0.6875rem;
+  .schedule-table td:first-child {
+    width: 108px;
+    font-size: 0.75rem;
+    padding-top: 21px;
+    padding-right: 16px;
   }
-  .program-number {
-    align-self: start;
-    padding-top: 5px;
+  .session-title,
+  .schedule-break .session-title {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .session-detail {
+    font-size: 0.8125rem;
   }
   .program-footnote {
     font-size: 0.75rem;
@@ -1762,8 +1792,7 @@ summary:focus-visible {
 .event-bar .meta-label,
 .affiliations > .meta-label,
 .affiliations .affiliation-note,
-.committee-status .badge,
-.program-status {
+.committee-status .badge {
   font-size: 0.75rem;
 }
 .hero-copy,
