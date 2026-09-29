@@ -28,7 +28,7 @@ To update the live site, commit the revised files to `main`, then check **Action
 - The attached FinFM proposal is the source for the workshop scope and organizing committee.
 - The **tentative 09:00–17:00 program** follows `FinFM_AAAI27_Schedule.docx`, supplied on September 29, 2026. The workshop will take place on **February 22 or 23, 2027**, at Palais des congrès de Montréal; the final day remains unconfirmed. Times are displayed as local to Montréal.
 - **Keynote speakers, invited speakers, and panelists are unconfirmed.** Their names, affiliations, and proposed keynote titles are omitted. The source documents containing these candidates are not published.
-- **Program Committee names are intentionally omitted**, following the organizer's instruction. Public recruitment has closed; the committee will be assembled through direct invitations after verification of relevant publications.
+- **Program Committee names are intentionally omitted**, following the organizer's instruction. Researchers can express interest through the linked form; the organizers assess the quality and relevance of applicants' publications before confirming PC appointments.
 - The organizer approved submission opening on **October 2, 2026 at 00:00 AoE (UTC−12)** and closing on **November 20, 2026 at 23:59 AoE**. Author notifications are planned for December 2, 2026. The workshop day remains tentative.
 - Full papers are described as up to seven pages plus references in AAAI format. Benchmark-track details, OpenReview URL, proceedings arrangements, and awards remain subject to final announcement.
 - No submission button points to a placeholder or unrelated OpenReview venue.
@@ -37,11 +37,11 @@ To update the live site, commit the revised files to `main`, then check **Action
 
 The organizers should update the site as workshop details are confirmed. The proposal PDF and its unconfirmed invitee lists are not included in the website.
 
-## Program Committee invitations
+## Program Committee recruitment
 
-On September 29, 2026, the organizer instructed that public PC recruitment end and be replaced by direct invitations of researchers with verified relevant publications. The Google Forms interest form no longer accepts responses; existing records remain in the owner's account.
+The **Join PC** button in the sticky header, the **Join the Program Committee** link in the hero, and the button in `#committee` link to the [PC interest form](https://docs.google.com/forms/d/e/1FAIpQLSdWEmFMBN3IYrSvQPDWwwyc_pkfj-sQS8U26I1dKXxN2pD4YQ/viewform?usp=header). The header button is visible on mobile without opening the navigation menu.
 
-The header and hero now link to the program. The committee section explains the invitation process and that confirmed members will be announced later. No public recruitment form link is included on the website.
+Applicants are evaluated on publication quality and relevance before appointments are confirmed. Submitting the form does not guarantee PC membership. Confirmed members and affiliations will be announced later.
 
 ## Accessibility and behavior
 
