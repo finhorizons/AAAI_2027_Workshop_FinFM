@@ -664,6 +664,9 @@ summary:focus-visible {
   color: var(--muted);
   margin-top: 5px;
 }
+.submission-state .button {
+  margin-top: 16px;
+}
 .guidelines details {
   border-top: 1px solid var(--line);
 }

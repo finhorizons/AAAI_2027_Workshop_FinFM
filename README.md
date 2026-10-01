@@ -30,8 +30,8 @@ To update the live site, commit the revised files to `main`, then check **Action
 - **Keynote speakers, invited speakers, and panelists are unconfirmed.** Their names, affiliations, and proposed keynote titles are omitted. The source documents containing these candidates are not published.
 - **Program Committee names are intentionally omitted**, following the organizer's instruction. Researchers can express interest through the linked form; the organizers assess the quality and relevance of applicants' publications before confirming PC appointments.
 - The organizer approved submission opening on **October 2, 2026 at 00:00 AoE (UTC−12)** and closing on **November 20, 2026 at 23:59 AoE**. Author notifications are planned for December 2, 2026. The workshop day remains tentative.
-- Full papers are described as up to seven pages plus references in AAAI format. Benchmark-track details, OpenReview URL, proceedings arrangements, and awards remain subject to final announcement.
-- No submission button points to a placeholder or unrelated OpenReview venue.
+- Full papers are described as up to seven pages plus references in AAAI format. Benchmark-track details, proceedings arrangements, and awards remain subject to final announcement.
+- The hero and call-for-papers submission buttons link to the [official FinFM OpenReview venue](https://openreview.net/group?id=AAAI.org/2027/Workshop/FinFM), created by OpenReview Support on September 30, 2026. The public venue and its submission dates were verified on October 2, 2026 (KST). Submission requires an OpenReview account.
 - Yichen Li has an intentional initials treatment until a verified portrait is supplied.
 - Organizer affiliations are labeled as affiliations, not sponsors or institutional endorsements.
 
