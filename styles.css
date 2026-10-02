@@ -891,13 +891,9 @@ summary:focus-visible {
   height: 100%;
   object-fit: cover;
   object-position: center 25%;
-  filter: grayscale(1);
-  transition:
-    filter 0.4s,
-    transform 0.5s;
+  transition: transform 0.5s;
 }
-.person-photo:hover img {
-  filter: grayscale(0);
+a.person-photo:hover img {
   transform: scale(1.025);
 }
 .person-arrow {

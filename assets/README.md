@@ -2,16 +2,17 @@
 
 ## Organizer portraits
 
-The following existing portraits were retrieved from the reference workshop provided by the organizer, on 28 September 2026. Names and affiliations are taken from the FinFM proposal. The source images remain unchanged; the site applies a reversible CSS grayscale treatment, which returns to color on hover.
+The portraits are the FinHorizons Foundation website portraits, exported from the foundation's People records on 2 October 2026 (480 × 480 JPEG, warm neutral background). They are shown in full color.
 
-| File                | Person        | Original source                                             |
-| ------------------- | ------------- | ----------------------------------------------------------- |
-| `yaxuan-kong.jpg`   | Yaxuan Kong   | https://icaif-25-rtfs.github.io/organizer/Yaxuan.jpeg       |
-| `stefan-zohren.jpg` | Stefan Zohren | https://icaif-25-rtfs.github.io/organizer/stefan-zohren.jpg |
-| `yoontae-hwang.png` | Yoontae Hwang | https://icaif-25-rtfs.github.io/organizer/yoontae.png       |
-| `qingsong-wen.jpg`  | Qingsong Wen  | https://icaif-25-rtfs.github.io/organizer/Qingsong.jpeg     |
+| File                | Person        |
+| ------------------- | ------------- |
+| `yaxuan-kong.jpg`   | Yaxuan Kong   |
+| `yichen-li.jpg`     | Yichen Li     |
+| `stefan-zohren.jpg` | Stefan Zohren |
+| `yoontae-hwang.jpg` | Yoontae Hwang |
+| `qingsong-wen.jpg`  | Qingsong Wen  |
 
-Yichen Li's portrait could not be verified. His card uses HTML initials and does not invent a photograph. Portrait ownership remains with the original rights holders; no general reuse license is asserted.
+Portrait ownership remains with the people pictured and the original rights holders; no general reuse license is asserted.
 
 ## Hero artwork
 
