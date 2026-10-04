@@ -3,7 +3,7 @@
 // All content remains readable without JavaScript. This file only enhances navigation.
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("#primary-nav");
-const mobileNavigation = window.matchMedia("(max-width: 900px)");
+const mobileNavigation = window.matchMedia("(max-width: 1200px)");
 
 function setMenu(open) {
   menuButton.setAttribute("aria-expanded", String(open));
