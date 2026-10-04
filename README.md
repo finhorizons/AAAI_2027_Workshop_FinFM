@@ -18,7 +18,7 @@ To update the live site, commit the revised files to `main`, then check **Action
 
 ## Editing content
 
-- `index.html`: all workshop copy, dates, contacts, organizer profiles, and submission information.
+- `index.html`: all workshop copy, dates, speakers, organizer profiles, and submission information.
 - `styles.css`: color palette, fonts, layout, responsive styles, and reduced-motion support.
 - `script.js`: mobile navigation and active section highlighting.
 - `assets/`: locally hosted images, fonts, licenses, and source credits.
@@ -30,8 +30,10 @@ To update the live site, commit the revised files to `main`, then check **Action
 - **Keynote speakers, invited speakers, and panelists are unconfirmed.** Their names, affiliations, and proposed keynote titles are omitted. The source documents containing these candidates are not published.
 - **Program Committee names are intentionally omitted**, following the organizer's instruction. Researchers can express interest through the linked form; the organizers assess the quality and relevance of applicants' publications before confirming PC appointments.
 - The organizer approved submission opening on **October 2, 2026 at 00:00 AoE (UTC−12)** and closing on **November 20, 2026 at 23:59 AoE**. Author notifications are planned for December 2, 2026. The workshop day remains tentative.
-- Full papers are described as up to seven pages plus references in AAAI format. Benchmark-track details, proceedings arrangements, and awards remain subject to final announcement.
-- The hero and call-for-papers submission buttons link to the [official FinFM OpenReview venue](https://openreview.net/group?id=AAAI.org/2027/Workshop/FinFM), created by OpenReview Support on September 30, 2026. The public venue and its submission dates were verified on October 2, 2026 (KST). Submission requires an OpenReview account.
+- The call for papers follows `FinFM_AAAI27_CFP.docx`: research papers and benchmark papers, long papers up to seven pages and short papers up to four pages of technical content, with unlimited pages for references and appendices. Proceedings arrangements remain subject to final announcement.
+- The speakers section shows placeholder cards until speakers are confirmed. The site has no contact section.
+- The call for sponsors lists sponsorship opportunities without prices or tiers. Inquiries go to sponsorship@finhorizons.org. AAAI-27 does not allow workshops to be used for product marketing, so the Industry Session is described as technical work.
+- The header, hero and call-for-papers submission buttons link to the [official FinFM OpenReview venue](https://openreview.net/group?id=AAAI.org/2027/Workshop/FinFM), created by OpenReview Support on September 30, 2026. The public venue and its submission dates were verified on October 2, 2026 (KST). Submission requires an OpenReview account.
 - Yichen Li has an intentional initials treatment until a verified portrait is supplied.
 - Organizer affiliations are labeled as affiliations, not sponsors or institutional endorsements.
 

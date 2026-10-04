@@ -31,20 +31,20 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link
       rel="preload"
-      href="assets/dm-sans-regular.ttf"
+      href="assets/manrope-variable.woff2"
       as="font"
-      type="font/ttf"
+      type="font/woff2"
       crossorigin
     />
     <link
       rel="preload"
-      href="assets/instrument-serif-regular.ttf"
+      href="assets/dm-serif-display-regular.woff2"
       as="font"
-      type="font/ttf"
+      type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="styles.css?v=20261002-color-portraits" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261004-simplify" />
+    <script src="script.js?v=20261004-simplify" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -60,20 +60,28 @@
           <a href="#topics">Topics</a>
           <a href="#cfp">Call for papers</a>
           <a href="#program">Program</a>
+          <a href="#speakers">Speakers</a>
           <a href="#organizers">Organizers</a>
           <a href="#committee">Committee</a>
-          <a class="nav-contact" href="#contact"
-            >Get in touch <span aria-hidden="true">↗</span></a
-          >
+          <a href="#sponsors">Sponsors</a>
         </nav>
-        <a
-          class="header-action"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdWEmFMBN3IYrSvQPDWwwyc_pkfj-sQS8U26I1dKXxN2pD4YQ/viewform?usp=header"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Join the Program Committee (opens in a new tab)"
-          >Join PC <span aria-hidden="true">↗</span></a
-        >
+        <div class="header-actions">
+          <a
+            class="header-action header-action-secondary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdWEmFMBN3IYrSvQPDWwwyc_pkfj-sQS8U26I1dKXxN2pD4YQ/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Join the Program Committee (opens in a new tab)"
+            >Join PC <span aria-hidden="true">↗</span></a
+          ><a
+            class="header-action"
+            href="https://openreview.net/group?id=AAAI.org/2027/Workshop/FinFM"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Submit to FinFM on OpenReview (opens in a new tab)"
+            >Submit <span aria-hidden="true">↗</span></a
+          >
+        </div>
         <button
           class="menu-toggle"
           type="button"
@@ -86,103 +94,135 @@
       </div>
     </header>
     <main id="main">
-      <section class="hero wrap" id="home" aria-labelledby="hero-title">
-        <div class="hero-copy">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <svg
+          class="hero-bg"
+          viewBox="0 0 1440 620"
+          preserveAspectRatio="xMidYMid slice"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <defs>
+            <pattern
+              id="hero-grid"
+              width="64"
+              height="64"
+              patternUnits="userSpaceOnUse"
+            >
+              <path d="M64 0H0V64" />
+            </pattern>
+            <linearGradient id="hero-fade" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#fff" stop-opacity="0.15" />
+              <stop offset="0.45" stop-color="#fff" stop-opacity="0.55" />
+              <stop offset="1" stop-color="#fff" stop-opacity="1" />
+            </linearGradient>
+            <mask id="hero-mask">
+              <rect width="1440" height="620" fill="url(#hero-fade)" />
+            </mask>
+          </defs>
+          <rect class="hero-grid" width="1440" height="620" fill="url(#hero-grid)" />
+          <g mask="url(#hero-mask)">
+          <path class="hero-line hero-line-main" d="M-40 470C-30 468 1 457 21 455C41 453 61 460 82 458C102 456 122 449 142 444C163 439 183 435 203 428C223 420 244 405 264 398C284 391 305 384 325 385C345 385 365 397 386 400C406 403 426 398 446 400C467 403 487 412 507 414C527 416 548 411 568 411C588 410 609 411 629 410C649 409 669 414 690 405C710 397 730 366 750 360C771 354 791 368 811 370C831 372 852 371 872 372C892 372 913 381 933 374C953 366 973 343 994 327C1014 312 1034 293 1054 280C1075 267 1095 260 1115 252C1135 244 1156 236 1176 232C1196 229 1217 232 1237 230C1257 228 1277 221 1298 220C1318 219 1338 226 1358 222C1379 219 1399 204 1419 199C1439 195 1470 197 1480 197" />
+          <path class="hero-line hero-line-dash" d="M-40 520C-30 522 1 527 21 534C41 541 61 562 82 562C102 563 122 546 142 537C163 528 183 513 203 509C223 504 244 505 264 512C284 519 305 544 325 551C345 559 365 562 386 557C406 552 426 531 446 521C467 511 487 502 507 496C527 491 548 488 568 490C588 492 609 506 629 509C649 511 669 507 690 503C710 500 730 493 750 489C771 485 791 480 811 478C831 476 852 481 872 477C892 473 913 458 933 453C953 448 973 448 994 448C1014 447 1034 443 1054 449C1075 455 1095 481 1115 486C1135 491 1156 477 1176 479C1196 481 1217 500 1237 498C1257 496 1277 470 1298 467C1318 465 1338 481 1358 484C1379 486 1399 486 1419 483C1439 479 1470 467 1480 464" />
+          <path class="hero-line hero-line-faint" d="M-40 430C-30 430 1 423 21 428C41 433 61 460 82 460C102 460 122 429 142 427C163 426 183 450 203 452C223 454 244 444 264 439C284 435 305 420 325 427C345 433 365 470 386 479C406 487 426 479 446 478C467 477 487 470 507 472C527 474 548 481 568 489C588 496 609 514 629 518C649 521 669 511 690 512C710 513 730 528 750 524C771 521 791 499 811 490C831 482 852 480 872 474C892 468 913 467 933 456C953 446 973 427 994 411C1014 395 1034 378 1054 361C1075 343 1095 318 1115 307C1135 296 1156 299 1176 295C1196 291 1217 289 1237 285C1257 281 1277 273 1298 270C1318 267 1338 275 1358 267C1379 259 1399 231 1419 222C1439 213 1470 216 1480 215" />
+          <path class="hero-line hero-line-faint" d="M-40 455C-30 448 1 419 21 413C41 407 61 414 82 420C102 425 122 444 142 444C163 445 183 435 203 424C223 413 244 388 264 379C284 371 305 372 325 372C345 373 365 375 386 382C406 388 426 412 446 410C467 407 487 382 507 368C527 354 548 329 568 324C588 320 609 336 629 340C649 345 669 341 690 350C710 358 730 380 750 391C771 402 791 412 811 415C831 418 852 411 872 407C892 404 913 384 933 394C953 404 973 456 994 466C1014 476 1034 459 1054 452C1075 445 1095 435 1115 424C1135 412 1156 391 1176 385C1196 378 1217 383 1237 382C1257 382 1277 384 1298 382C1318 379 1338 370 1358 366C1379 363 1399 360 1419 360C1439 359 1470 362 1480 363" />
+          <path class="hero-line hero-line-faint" d="M-40 480C-30 478 1 474 21 471C41 467 61 464 82 460C102 457 122 451 142 452C163 453 183 467 203 468C223 469 244 469 264 459C284 450 305 417 325 409C345 402 365 416 386 414C406 413 426 405 446 401C467 397 487 392 507 390C527 388 548 388 568 388C588 388 609 385 629 390C649 396 669 413 690 420C710 428 730 433 750 435C771 437 791 438 811 433C831 428 852 417 872 406C892 396 913 376 933 371C953 365 973 367 994 373C1014 379 1034 402 1054 407C1075 412 1095 406 1115 404C1135 402 1156 395 1176 395C1196 396 1217 413 1237 406C1257 400 1277 368 1298 358C1318 347 1338 344 1358 343C1379 343 1399 348 1419 353C1439 358 1470 371 1480 374" />
+          <circle class="hero-node" cx="811" cy="370" r="5" />
+          <circle class="hero-node" cx="1054" cy="280" r="5" />
+          <circle class="hero-node" cx="1298" cy="220" r="5" />
+          </g>
+        </svg>
+        <div class="wrap hero-inner">
           <p class="eyebrow">
-            <span class="status-dot" aria-hidden="true"></span> FINFM · AAAI
-            2027 WORKSHOP
+            <span class="status-dot" aria-hidden="true"></span>AAAI 2027 Workshop
+            <span class="eyebrow-partner"
+              ><span class="eyebrow-times" aria-hidden="true">×</span>
+              <a
+                href="https://finhorizons.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >FinHorizons Foundation</a
+              ></span
+            >
           </p>
           <h1 id="hero-title">
-            Foundation<br />
-            models.<br />
-            <em
-              >Financial<br />
-              frontiers.</em
-            >
+            FinFM: Foundation Models<br />
+            and Generative AI <em>for Finance</em>
           </h1>
-          <p class="hero-subtitle">
-            Foundation Models and<br />
-            Generative AI for Finance
-          </p>
-          <p class="hero-description">
-            A meeting point for the people building, evaluating, and deploying
-            the next generation of financial AI.
-          </p>
-          <div class="hero-actions">
-            <a
-              class="button button-dark"
-              href="https://openreview.net/group?id=AAAI.org/2027/Workshop/FinFM"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Submit to FinFM on OpenReview (opens in a new tab)"
-              >Submit via OpenReview <span aria-hidden="true">↗</span></a
-            ><a
-              class="text-link"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdWEmFMBN3IYrSvQPDWwwyc_pkfj-sQS8U26I1dKXxN2pD4YQ/viewform?usp=header"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Join the Program Committee <span aria-hidden="true">↗</span></a
-            >
-          </div>
-        </div>
-        <div class="hero-visual">
-          <img
-            class="hero-art"
-            src="assets/hero.png"
-            alt=""
-            width="1024"
-            height="1024"
-            fetchpriority="high"
-          />
-          <div class="art-topline">
-            <span>FINANCE × FOUNDATION MODELS</span
-            ><span class="art-cross" aria-hidden="true">+</span>
-          </div>
-          <div class="art-bottomline">
-            <span
-              >From signals<br />
-              to understanding.</span
-            ><span class="art-coordinate" aria-hidden="true"
-              >FinFM<br />
-              2027 — 01</span
-            >
+          <div class="hero-body">
+            <div>
+              <p class="hero-description">
+                A meeting point for the people building, evaluating, and deploying
+                the next generation of financial AI.
+              </p>
+              <div class="hero-actions">
+                <a
+                  class="button button-dark"
+                  href="https://openreview.net/group?id=AAAI.org/2027/Workshop/FinFM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Submit to FinFM on OpenReview (opens in a new tab)"
+                  >Submit via OpenReview <span aria-hidden="true">↗</span></a
+                ><a
+                  class="text-link"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdWEmFMBN3IYrSvQPDWwwyc_pkfj-sQS8U26I1dKXxN2pD4YQ/viewform?usp=header"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Join the Program Committee <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+            <div class="hero-info">
+              <ul class="hero-meta" aria-label="Workshop information">
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3.5" y="5" width="17" height="15" rx="1.5" />
+                    <path d="M3.5 10h17M8 3v4M16 3v4" />
+                  </svg>
+                  <span
+                    >February 22 or 23, 2027
+                    <small>Final day to be confirmed</small></span
+                  >
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21Z"
+                    />
+                    <circle cx="12" cy="9.8" r="2.3" />
+                  </svg>
+                  <span
+                    >Montréal, Canada
+                    <small>Palais des congrès de Montréal</small></span
+                  >
+                </li>
+              </ul>
+              <a
+                class="text-link hero-aaai"
+                href="https://aaai.org/conference/aaai/aaai-27/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Explore AAAI 2027 <span aria-hidden="true">↗</span></a
+              >
+            </div>
           </div>
         </div>
       </section>
-      <div class="event-bar wrap" aria-label="Workshop information">
-        <div>
-          <span class="meta-label">WHEN</span>
+      <div class="deadline-strip">
+        <div class="wrap deadline-inner">
           <p>
-            February 22 or 23, 2027
-            <span class="small-note">Final day to be confirmed</span>
+            <span class="strip-label">Call for papers</span>
+            <span
+              >Submission deadline
+              <strong
+                ><time datetime="2026-11-20T23:59:00-12:00"
+                  >20 November 2026, 23:59 AoE</time
+                ></strong
+              ></span
+            >
           </p>
+          <a href="#cfp">Read the call <span aria-hidden="true">↓</span></a>
         </div>
-        <div>
-          <span class="meta-label">WHERE</span>
-          <p>
-            Montréal, Canada
-            <span class="small-note">Palais des congrès de Montréal</span>
-          </p>
-        </div>
-        <a
-          href="https://aaai.org/conference/aaai/aaai-27/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Explore AAAI 2027 <span aria-hidden="true">↗</span></a
-        >
-      </div>
-      <div
-        class="affiliations wrap"
-        aria-label="Organizer affiliations, not sponsors"
-      >
-        <p class="meta-label">BRINGING TOGETHER PERSPECTIVES FROM</p>
-        <div class="affiliation-names">
-          <span class="affiliation-oxford">University of Oxford</span
-          ><span>FinHorizons Foundation</span
-          ><span>Pusan National University</span
-          ><span>Squirrel Ai Learning</span>
-        </div>
-        <p class="affiliation-note">Organizer affiliations</p>
       </div>
       <section
         class="section wrap overview"
@@ -190,39 +230,65 @@
         aria-labelledby="about-title"
       >
         <div class="section-intro">
-          <p class="section-index">01 / THE WORKSHOP</p>
+          <p class="section-index"><span>01</span>The workshop</p>
           <h2 id="about-title">
             Beyond capability.<br />
             <em>Toward reliability.</em>
           </h2>
+          <figure class="overview-figure" aria-hidden="true">
+            <svg
+              viewBox="0 0 520 360"
+              preserveAspectRatio="none"
+              focusable="false"
+            >
+              <line class="ov-grid" x1="0" x2="520" y1="60" y2="60" />
+              <line class="ov-grid" x1="0" x2="520" y1="120" y2="120" />
+              <line class="ov-grid" x1="0" x2="520" y1="180" y2="180" />
+              <line class="ov-grid" x1="0" x2="520" y1="240" y2="240" />
+              <line class="ov-grid" x1="0" x2="520" y1="300" y2="300" />
+              <line class="ov-grid" x1="65" x2="65" y1="0" y2="360" />
+              <line class="ov-grid" x1="130" x2="130" y1="0" y2="360" />
+              <line class="ov-grid" x1="195" x2="195" y1="0" y2="360" />
+              <line class="ov-grid" x1="260" x2="260" y1="0" y2="360" />
+              <line class="ov-grid" x1="325" x2="325" y1="0" y2="360" />
+              <line class="ov-grid" x1="390" x2="390" y1="0" y2="360" />
+              <line class="ov-grid" x1="455" x2="455" y1="0" y2="360" />
+              <rect class="ov-oos" x="330.0" y="0" width="190.0" height="360" />
+              <path class="ov-band" d="M330.0 132.5 L346.6 122.8 L363.2 113.1 L379.8 103.4 L396.4 93.7 L413.0 84.0 L429.6 74.3 L446.2 64.6 L462.8 54.9 L479.4 45.2 L496.0 35.5 L496.0 185.5 L479.4 180.2 L462.8 174.9 L446.2 169.6 L429.6 164.3 L413.0 159.0 L396.4 153.7 L379.8 148.4 L363.2 143.1 L346.6 137.8 L330.0 132.5Z" />
+              <line class="ov-split" x1="330.0" x2="330.0" y1="0" y2="360" />
+              <path class="ov-real" d="M330.0 132.5C332.8 132.1 341.1 130.8 346.6 130.3C352.1 129.8 357.7 129.6 363.2 129.3C368.7 129.0 374.3 125.3 379.8 128.7C385.3 132.0 390.9 145.5 396.4 149.4C401.9 153.3 407.5 151.0 413.0 152.1C418.5 153.2 424.1 154.1 429.6 156.2C435.1 158.3 440.7 159.9 446.2 164.7C451.7 169.6 457.3 181.9 462.8 185.4C468.3 188.9 473.9 186.3 479.4 185.9C484.9 185.4 493.2 183.3 496.0 182.8" />
+              <path class="ov-median" d="M330.0 132.5L496.0 110.5" />
+              <path class="ov-hist" d="M24.0 250.0C26.3 247.3 33.3 239.2 37.9 233.8C42.5 228.5 47.2 219.9 51.8 218.0C56.5 216.1 61.1 226.2 65.7 222.2C70.4 218.1 75.0 199.3 79.6 193.7C84.3 188.2 88.9 194.4 93.5 189.0C98.2 183.5 102.8 164.1 107.5 160.9C112.1 157.8 116.7 168.5 121.4 169.9C126.0 171.2 130.6 167.1 135.3 168.9C139.9 170.7 144.5 180.1 149.2 180.6C153.8 181.1 158.5 173.1 163.1 171.9C167.7 170.6 172.4 173.9 177.0 173.0C181.6 172.2 186.3 169.6 190.9 166.7C195.5 163.7 200.2 157.5 204.8 155.4C209.5 153.2 214.1 156.9 218.7 153.8C223.4 150.7 228.0 140.8 232.6 136.7C237.3 132.7 241.9 130.1 246.5 129.6C251.2 129.2 255.8 133.8 260.5 134.1C265.1 134.4 269.7 133.2 274.4 131.5C279.0 129.8 283.6 121.6 288.3 123.8C292.9 126.0 297.5 141.7 302.2 144.7C306.8 147.8 311.5 144.2 316.1 142.1C320.7 140.1 327.7 134.1 330.0 132.5" />
+            </svg>
+            <span class="ov-label ov-label-in">In-sample</span>
+            <span class="ov-label ov-label-out">Out-of-sample</span>
+            <span class="ov-node"></span>
+          </figure>
         </div>
         <div class="overview-content">
           <p class="lead">
-            Finance is a demanding testbed for AI. Markets shift, evidence is
-            noisy, and decisions have real consequences.
+            Foundation models and generative AI have moved from research
+            prototypes to production systems in finance.
           </p>
           <p>
-            FinFM brings together machine learning researchers, finance
-            academics, and industry practitioners to examine what foundation
-            models and generative AI can deliver in financial settings—and how
-            to evaluate them rigorously.
+            Yet the evidence behind these systems is fragile. Reported
+            forecasting gains often fade under careful evaluation, and common
+            practice remains exposed to look-ahead, survivorship and cost
+            biases.
           </p>
           <p>
-            Our scope spans financial language models, time-series and
-            order-book models, multimodal systems, and AI agents. We connect
-            advances in model design with reproducible evidence and the
-            challenges of real-world deployment.
+            FinFM brings AI researchers, finance academics, practitioners and
+            regulators together to establish how foundation models and
+            generative AI for finance should be built, evaluated and validated.
           </p>
           <div class="principles">
             <div>
-              <span aria-hidden="true">↗</span>
               <h3>Evidence before claims</h3>
               <p>
                 Leakage-free benchmarks and reproducible, cost-aware evaluation.
               </p>
             </div>
             <div>
-              <span aria-hidden="true">↗</span>
               <h3>Research meets practice</h3>
               <p>
                 Open discussion across academia, industry, and financial
@@ -230,7 +296,6 @@
               </p>
             </div>
             <div>
-              <span aria-hidden="true">↗</span>
               <h3>Resources for the community</h3>
               <p>
                 A planned evaluation checklist and curated benchmark resources.
@@ -247,82 +312,49 @@
         <div class="wrap section">
           <div class="section-heading">
             <div>
-              <p class="section-index">02 / RESEARCH DIRECTIONS</p>
+              <p class="section-index"><span>02</span>Research directions</p>
               <h2 id="topics-title">
                 The questions<br />
                 <em>worth asking.</em>
               </h2>
             </div>
             <p>
-              We welcome work across the design, evaluation, and deployment of
-              financial AI, including the following topics.
+              The topics of interest include, but are not limited to, the
+              following.
             </p>
           </div>
           <div class="topic-grid">
-            <article class="topic-card topic-featured">
-              <div class="topic-top">
-                <span class="topic-number">01</span
-                ><svg viewBox="0 0 48 48" aria-hidden="true">
-                  <path
-                    d="M8 34 24 7l16 27H8ZM8 34l16-9 16 9M24 7v18M8 34l16 8 16-8M24 25v17"
-                  />
-                </svg>
-              </div>
-              <h3>
-                Models &<br />
-                representations
-              </h3>
+            <article class="topic">
+              <span class="topic-number">01</span>
+              <h3>Models & representations</h3>
               <p>Learning the language of financial markets.</p>
               <ul>
                 <li>Financial LLMs and continued pretraining</li>
                 <li>Time-series and order-book foundation models</li>
-                <li>Multimodal models for filings, news, and prices</li>
+                <li>Multimodal models for filings, news and prices</li>
+                <li>Generative scenario generation and stress testing</li>
               </ul>
             </article>
-            <article class="topic-card">
-              <div class="topic-top">
-                <span class="topic-number">02</span
-                ><svg viewBox="0 0 48 48" aria-hidden="true">
-                  <circle cx="24" cy="24" r="7" />
-                  <circle cx="8" cy="9" r="3" />
-                  <circle cx="40" cy="9" r="3" />
-                  <circle cx="8" cy="39" r="3" />
-                  <circle cx="40" cy="39" r="3" />
-                  <path d="m11 12 8 7m10 0 8-7m-26 24 8-7m10 0 8 7" />
-                </svg>
-              </div>
-              <h3>
-                Agents &<br />
-                reasoning
-              </h3>
+            <article class="topic">
+              <span class="topic-number">02</span>
+              <h3>Agents & reasoning</h3>
               <p>From information to grounded decisions.</p>
               <ul>
-                <li>
-                  LLM agents for research, trading, compliance, and advice
-                </li>
-                <li>Retrieval- and tool-augmented reasoning</li>
-                <li>Generative scenarios and stress testing</li>
-                <li>Deployment in regulated institutions</li>
+                <li>LLM agents for research, trading, compliance and advice</li>
+                <li>Retrieval-augmented and tool-augmented reasoning</li>
+                <li>Guardrails, hallucination control and safety</li>
+                <li>Deployment in regulated settings: small vs. frontier models</li>
               </ul>
             </article>
-            <article class="topic-card">
-              <div class="topic-top">
-                <span class="topic-number">03</span
-                ><svg viewBox="0 0 48 48" aria-hidden="true">
-                  <path d="M24 5 8 12v13c0 9 16 18 16 18s16-9 16-18V12L24 5Z" />
-                  <path d="m16 24 5 5 11-12" />
-                </svg>
-              </div>
-              <h3>
-                Evaluation &<br />
-                trustworthiness
-              </h3>
+            <article class="topic">
+              <span class="topic-number">03</span>
+              <h3>Evaluation & trustworthiness</h3>
               <p>Making progress measurable and reliable.</p>
               <ul>
                 <li>Leakage-free benchmarks and cost-aware evaluation</li>
-                <li>Guardrails, hallucination control, and safety</li>
-                <li>Uncertainty quantification and calibration</li>
+                <li>Uncertainty and calibration</li>
                 <li>Interpretability for model risk management</li>
+                <li>Systemic risk and model-risk validation</li>
               </ul>
             </article>
           </div>
@@ -335,135 +367,122 @@
       >
         <div class="section-heading">
           <div>
-            <p class="section-index">03 / CALL FOR PAPERS</p>
+            <p class="section-index"><span>03</span>Call for papers</p>
             <h2 id="cfp-title">
               Bring your research.<br />
               <em>Move the field forward.</em>
             </h2>
           </div>
           <p>
-            We welcome methodological advances, careful empirical studies,
-            useful datasets, and lessons from deployment.
+            Submissions must be prepared using the AAAI-27 template and
+            anonymized for double-blind review. We accept two kinds of paper.
           </p>
         </div>
-        <div class="cfp-layout">
-          <div class="submission-info">
-            <div class="track">
-              <span class="track-label">RESEARCH TRACK</span>
-              <h3>Full papers</h3>
-              <p>
-                Up to <strong>7 pages</strong>, plus references, in AAAI format.
-                Submissions should advance the design, understanding,
-                evaluation, or application of foundation models and generative
-                AI in finance.
-              </p>
-            </div>
-            <div class="track">
-              <span class="track-label">BENCHMARKS & DATASETS TRACK</span>
-              <h3>Better evidence. Shared resources.</h3>
-              <p>
-                A dedicated track for benchmarks, datasets, and evaluation
-                resources that help the community assess financial AI more
-                rigorously. Detailed track instructions will follow.
-              </p>
-            </div>
-            <div class="submission-state">
-              <span class="status-dot" aria-hidden="true"></span>
-              <div>
-                <strong>Official submission portal</strong>
-                <p>
-                  Submit your paper through the FinFM venue on OpenReview. An
-                  OpenReview account is required. See Important dates for the
-                  opening time and deadline.
-                </p>
-                <a
-                  class="button button-dark"
-                  href="https://openreview.net/group?id=AAAI.org/2027/Workshop/FinFM"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Submit to FinFM on OpenReview (opens in a new tab)"
-                  >Submit via OpenReview <span aria-hidden="true">↗</span></a
-                >
-              </div>
-            </div>
-            <div class="guidelines">
-              <details open>
-                <summary>
-                  Review process <span aria-hidden="true">+</span>
-                </summary>
-                <p>
-                  Submissions are planned to undergo double-blind review on
-                  OpenReview, with at least two reviews and an organizer
-                  meta-review per paper. Please prepare an anonymized
-                  manuscript.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Presentations & proceedings <span aria-hidden="true">+</span>
-                </summary>
-                <p>
-                  All accepted papers are planned to be presented as posters,
-                  with selected oral presentations and a benchmark spotlight.
-                  The workshop is non-archival by default; an opt-in online
-                  proceedings volume is planned. Final arrangements will be
-                  announced.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Paper & benchmark awards <span aria-hidden="true">+</span>
-                </summary>
-                <p>
-                  A Best Paper Award and a Best Benchmark Award are planned to
-                  recognize outstanding research and open resources. Award
-                  details will be announced.
-                </p>
-              </details>
-            </div>
-          </div>
-          <aside class="dates-panel" aria-labelledby="dates-title">
-            <div class="dates-heading">
-              <h3 id="dates-title">Important dates</h3>
-            </div>
-            <p class="dates-note">
-              Submission times use Anywhere on Earth (AoE, UTC−12). The workshop
-              day is still to be confirmed.
+        <div class="tracks">
+          <div class="track">
+            <span class="track-label">Track 01</span>
+            <h3>Research papers</h3>
+            <p>
+              Novel methods, theory, or experiments. Eligible for the Best Paper
+              Award.
             </p>
-            <ol class="date-list">
-              <li>
-                <span>Submissions open</span
-                ><time datetime="2026-10-02T00:00:00-12:00"
-                  >02 Oct <small>2026</small></time
-                >
-                <small class="date-detail">00:00 AoE</small>
-              </li>
-              <li class="date-highlight">
-                <span>Paper submission deadline</span
-                ><time datetime="2026-11-20T23:59:00-12:00"
-                  >20 Nov <small>2026</small></time
-                >
-                <small class="date-detail">23:59 AoE</small>
-              </li>
-              <li>
-                <span>Author notification</span
-                ><time datetime="2026-12-02">02 Dec <small>2026</small></time>
-              </li>
-              <li>
-                <span>Workshop</span
-                ><span class="date-tba"
-                  >22 or 23 Feb 2027<small
-                    >Final day to be confirmed · See the tentative
-                    program</small
-                  ></span
-                >
-              </li>
-            </ol>
-            <a class="text-link" href="#contact"
-              >Questions about your submission?
-              <span aria-hidden="true">↗</span></a
-            >
-          </aside>
+          </div>
+          <div class="track">
+            <span class="track-label">Track 02</span>
+            <h3>Benchmark papers</h3>
+            <p>
+              New benchmarks, datasets, or evaluation protocols. Eligible for
+              the Best Benchmark Award.
+            </p>
+          </div>
+        </div>
+        <dl class="facts">
+          <div>
+            <dt>Long papers</dt>
+            <dd>
+              Up to 7 pages of technical content, with unlimited pages for
+              references and appendices
+            </dd>
+          </div>
+          <div>
+            <dt>Short papers</dt>
+            <dd>
+              Up to 4 pages of technical content, with unlimited pages for
+              references and appendices
+            </dd>
+          </div>
+          <div>
+            <dt>Supplementary material</dt>
+            <dd>Allowed, but reviewers are not required to review it</dd>
+          </div>
+          <div>
+            <dt>Awards</dt>
+            <dd>
+              Determined by the quality of the work, regardless of page length
+            </dd>
+          </div>
+        </dl>
+        <div class="cfp-notes">
+          <p>
+            <strong>Official submission portal.</strong> Submit your paper
+            through the FinFM venue on OpenReview. An OpenReview account is
+            required.
+          </p>
+          <p>
+            <strong>Review process.</strong> Submissions are planned to undergo
+            double-blind review on OpenReview, with at least two reviews and an
+            organizer meta-review per paper. Please prepare an anonymized
+            manuscript.
+          </p>
+          <p>
+            <strong>Presentations & proceedings.</strong> All accepted papers
+            are planned to be presented as posters, with selected oral
+            presentations and a benchmark spotlight. The workshop is
+            non-archival by default; an opt-in online proceedings volume is
+            planned. Final arrangements will be announced.
+          </p>
+        </div>
+        <div class="dates" aria-labelledby="dates-title">
+          <h3 id="dates-title">Important dates</h3>
+          <ol class="date-list">
+            <li>
+              <span>Submissions open</span
+              ><time datetime="2026-10-02T00:00:00-12:00"
+                >02 Oct <small>2026</small></time
+              >
+              <small class="date-detail">00:00 AoE</small>
+            </li>
+            <li class="date-highlight">
+              <span>Paper submission deadline</span
+              ><time datetime="2026-11-20T23:59:00-12:00"
+                >20 Nov <small>2026</small></time
+              >
+              <small class="date-detail">23:59 AoE</small>
+            </li>
+            <li>
+              <span>Author notification</span
+              ><time datetime="2026-12-02">02 Dec <small>2026</small></time>
+            </li>
+            <li>
+              <span>Workshop</span
+              ><span class="date-tba">22 or 23 Feb <small>2027</small></span>
+              <small class="date-detail">Final day to be confirmed</small>
+            </li>
+          </ol>
+          <p class="dates-note">
+            Submission times use Anywhere on Earth (AoE, UTC−12). The workshop
+            day is still to be confirmed. See the tentative program.
+          </p>
+        </div>
+        <div class="cfp-actions">
+          <a
+            class="button button-dark"
+            href="https://openreview.net/group?id=AAAI.org/2027/Workshop/FinFM"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Submit to FinFM on OpenReview (opens in a new tab)"
+            >Submit via OpenReview <span aria-hidden="true">↗</span></a
+          >
         </div>
       </section>
       <section
@@ -474,188 +493,95 @@
         <div class="wrap section">
           <div class="section-heading">
             <div>
-              <p class="section-index">04 / PROGRAM SCHEDULE</p>
+              <p class="section-index"><span>04</span>Program schedule</p>
               <h2 id="program-title">
                 A program built<br />
                 <em>for exchange.</em>
               </h2>
             </div>
             <div>
-              <span class="badge badge-light">Tentative schedule</span>
+              <span class="badge">Tentative schedule</span>
               <p>
-                One full day on February 22 or 23, 2027. The final workshop date
-                will be announced.
+                One full day on February 22 or 23, 2027, with keynote talks,
+                oral presentations, poster sessions, an industry session, and a
+                panel discussion. The final workshop date will be announced.
               </p>
             </div>
           </div>
-          <table class="schedule-table" aria-describedby="program-note">
-            <caption>
-              09:00–17:00 · All times are local to Montréal
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col">Time</th>
-                <th scope="col">Session</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <time datetime="09:00">09:00</time>–<time datetime="09:10"
-                    >09:10</time
-                  >
-                </td>
-                <td><span class="session-title">Opening remarks</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <time datetime="09:10">09:10</time>–<time datetime="09:40"
-                    >09:40</time
-                  >
-                </td>
-                <td><span class="session-title">Keynote 1</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <time datetime="09:40">09:40</time>–<time datetime="10:25"
-                    >10:25</time
-                  >
-                </td>
-                <td>
-                  <span class="session-title">Oral session I</span
-                  ><span class="session-detail"
-                    >3 papers · 15 minutes each</span
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <time datetime="10:25">10:25</time>–<time datetime="10:30"
-                    >10:30</time
-                  >
-                </td>
-                <td>
-                  <span class="session-title">Poster spotlight I</span
-                  ><span class="session-detail">30-second introductions</span>
-                </td>
-              </tr>
-              <tr class="schedule-break">
-                <td>
-                  <time datetime="10:30">10:30</time>–<time datetime="11:00"
-                    >11:00</time
-                  >
-                </td>
-                <td>
-                  <span class="session-title"
-                    >Coffee break & poster session I</span
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <time datetime="11:00">11:00</time>–<time datetime="11:30"
-                    >11:30</time
-                  >
-                </td>
-                <td><span class="session-title">Keynote 2</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <time datetime="11:30">11:30</time>–<time datetime="12:00"
-                    >12:00</time
-                  >
-                </td>
-                <td><span class="session-title">Keynote 3</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <time datetime="12:00">12:00</time>–<time datetime="12:30"
-                    >12:30</time
-                  >
-                </td>
-                <td>
-                  <span class="session-title">Oral session II</span
-                  ><span class="session-detail"
-                    >2 papers · 15 minutes each</span
-                  >
-                </td>
-              </tr>
-              <tr class="schedule-break">
-                <td>
-                  <time datetime="12:30">12:30</time>–<time datetime="14:00"
-                    >14:00</time
-                  >
-                </td>
-                <td><span class="session-title">Lunch break</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <time datetime="14:00">14:00</time>–<time datetime="14:30"
-                    >14:30</time
-                  >
-                </td>
-                <td><span class="session-title">Keynote 4</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <time datetime="14:30">14:30</time>–<time datetime="15:00"
-                    >15:00</time
-                  >
-                </td>
-                <td><span class="session-title">Keynote 5</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <time datetime="15:00">15:00</time>–<time datetime="15:30"
-                    >15:30</time
-                  >
-                </td>
-                <td><span class="session-title">Industry session</span></td>
-              </tr>
-              <tr class="schedule-break">
-                <td>
-                  <time datetime="15:30">15:30</time>–<time datetime="16:00"
-                    >16:00</time
-                  >
-                </td>
-                <td>
-                  <span class="session-title"
-                    >Coffee break & poster session II</span
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <time datetime="16:00">16:00</time>–<time datetime="16:50"
-                    >16:50</time
-                  >
-                </td>
-                <td>
-                  <span class="session-title">Panel discussion</span
-                  ><span class="session-detail"
-                    >Validating Generative and Agentic Systems in
-                    Production</span
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <time datetime="16:50">16:50</time>–<time datetime="17:00"
-                    >17:00</time
-                  >
-                </td>
-                <td>
-                  <span class="session-title"
-                    >Award ceremony & closing remarks</span
-                  ><span class="session-detail"
-                    >Best Paper Award · Best Benchmark Award</span
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="schedule-columns">
+            <table class="schedule-table" aria-describedby="program-note">
+              <caption>Morning · 09:00–12:30</caption>
+              <tbody>
+                <tr>
+                  <td><time datetime="09:00">09:00</time>–<time datetime="09:10">09:10</time></td>
+                  <td><span class="session-title">Opening remarks</span></td>
+                </tr>
+                <tr>
+                  <td><time datetime="09:10">09:10</time>–<time datetime="09:40">09:40</time></td>
+                  <td><span class="session-title">Keynote 1</span></td>
+                </tr>
+                <tr>
+                  <td><time datetime="09:40">09:40</time>–<time datetime="10:25">10:25</time></td>
+                  <td><span class="session-title">Oral session I</span><span class="session-detail">3 papers · 15 minutes each</span></td>
+                </tr>
+                <tr>
+                  <td><time datetime="10:25">10:25</time>–<time datetime="10:30">10:30</time></td>
+                  <td><span class="session-title">Poster spotlight I</span><span class="session-detail">30-second introductions</span></td>
+                </tr>
+                <tr class="schedule-break">
+                  <td><time datetime="10:30">10:30</time>–<time datetime="11:00">11:00</time></td>
+                  <td><span class="session-title">Coffee break & poster session I</span></td>
+                </tr>
+                <tr>
+                  <td><time datetime="11:00">11:00</time>–<time datetime="11:30">11:30</time></td>
+                  <td><span class="session-title">Keynote 2</span></td>
+                </tr>
+                <tr>
+                  <td><time datetime="11:30">11:30</time>–<time datetime="12:00">12:00</time></td>
+                  <td><span class="session-title">Keynote 3</span></td>
+                </tr>
+                <tr>
+                  <td><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30</time></td>
+                  <td><span class="session-title">Oral session II</span><span class="session-detail">2 papers · 15 minutes each</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="schedule-table" aria-describedby="program-note">
+              <caption>Afternoon · 12:30–17:00</caption>
+              <tbody>
+                <tr class="schedule-break">
+                  <td><time datetime="12:30">12:30</time>–<time datetime="14:00">14:00</time></td>
+                  <td><span class="session-title">Lunch break</span></td>
+                </tr>
+                <tr>
+                  <td><time datetime="14:00">14:00</time>–<time datetime="14:30">14:30</time></td>
+                  <td><span class="session-title">Keynote 4</span></td>
+                </tr>
+                <tr>
+                  <td><time datetime="14:30">14:30</time>–<time datetime="15:00">15:00</time></td>
+                  <td><span class="session-title">Keynote 5</span></td>
+                </tr>
+                <tr>
+                  <td><time datetime="15:00">15:00</time>–<time datetime="15:30">15:30</time></td>
+                  <td><span class="session-title">Industry session</span></td>
+                </tr>
+                <tr class="schedule-break">
+                  <td><time datetime="15:30">15:30</time>–<time datetime="16:00">16:00</time></td>
+                  <td><span class="session-title">Coffee break & poster session II</span></td>
+                </tr>
+                <tr>
+                  <td><time datetime="16:00">16:00</time>–<time datetime="16:50">16:50</time></td>
+                  <td><span class="session-title">Panel discussion</span><span class="session-detail">Validating Generative and Agentic Systems in Production</span></td>
+                </tr>
+                <tr>
+                  <td><time datetime="16:50">16:50</time>–<time datetime="17:00">17:00</time></td>
+                  <td><span class="session-title">Award ceremony & closing remarks</span><span class="session-detail">Best Paper Award · Best Benchmark Award</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p class="program-footnote" id="program-note">
-            Session times are provisional. Speakers, talk titles, and accepted
+            All times are local to Montréal. Session times are provisional. Speakers, talk titles, and accepted
             papers will be announced after confirmation.
           </p>
           <p class="program-footnote">
@@ -663,6 +589,129 @@
             Oral presentations include 10 minutes of presentation and 5 minutes
             of Q&A.
           </p>
+          <p class="program-footnote">
+            There are no criteria to attend beyond AAAI-27 registration. Anyone
+            interested in foundation models and generative AI for finance is
+            welcome. The number of attendees depends on the size of the room.
+          </p>
+        </div>
+      </section>
+      <section
+        class="section wrap speakers-section"
+        id="speakers"
+        aria-labelledby="speakers-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="section-index"><span>05</span>Speakers</p>
+            <h2 id="speakers-title">
+              Speakers & panelists<br />
+              <em>to be announced.</em>
+            </h2>
+          </div>
+          <p>
+            Profiles of the keynote speakers, the industry session speaker, and
+            the panelists will be posted here once they are confirmed.
+          </p>
+        </div>
+        <h3 class="speaker-group">Keynote speakers</h3>
+        <div class="people-grid">
+          <article class="person speaker-tba">
+            <div class="person-photo person-placeholder">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="18" r="8" />
+                <path d="M9 42c1.8-8 7.6-12 15-12s13.2 4 15 12" />
+              </svg>
+            </div>
+            <p class="person-role">Keynote 1</p>
+            <h3>To be announced</h3>
+          </article>
+          <article class="person speaker-tba">
+            <div class="person-photo person-placeholder">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="18" r="8" />
+                <path d="M9 42c1.8-8 7.6-12 15-12s13.2 4 15 12" />
+              </svg>
+            </div>
+            <p class="person-role">Keynote 2</p>
+            <h3>To be announced</h3>
+          </article>
+          <article class="person speaker-tba">
+            <div class="person-photo person-placeholder">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="18" r="8" />
+                <path d="M9 42c1.8-8 7.6-12 15-12s13.2 4 15 12" />
+              </svg>
+            </div>
+            <p class="person-role">Keynote 3</p>
+            <h3>To be announced</h3>
+          </article>
+          <article class="person speaker-tba">
+            <div class="person-photo person-placeholder">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="18" r="8" />
+                <path d="M9 42c1.8-8 7.6-12 15-12s13.2 4 15 12" />
+              </svg>
+            </div>
+            <p class="person-role">Keynote 4</p>
+            <h3>To be announced</h3>
+          </article>
+          <article class="person speaker-tba">
+            <div class="person-photo person-placeholder">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="18" r="8" />
+                <path d="M9 42c1.8-8 7.6-12 15-12s13.2 4 15 12" />
+              </svg>
+            </div>
+            <p class="person-role">Keynote 5</p>
+            <h3>To be announced</h3>
+          </article>
+        </div>
+        <h3 class="speaker-group">Panel discussion</h3>
+        <p class="panel-topic">
+          Validating Generative and Agentic Systems in Production
+        </p>
+        <div class="people-grid">
+          <article class="person speaker-tba">
+            <div class="person-photo person-placeholder">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="18" r="8" />
+                <path d="M9 42c1.8-8 7.6-12 15-12s13.2 4 15 12" />
+              </svg>
+            </div>
+            <p class="person-role">Panelist 1</p>
+            <h3>To be announced</h3>
+          </article>
+          <article class="person speaker-tba">
+            <div class="person-photo person-placeholder">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="18" r="8" />
+                <path d="M9 42c1.8-8 7.6-12 15-12s13.2 4 15 12" />
+              </svg>
+            </div>
+            <p class="person-role">Panelist 2</p>
+            <h3>To be announced</h3>
+          </article>
+          <article class="person speaker-tba">
+            <div class="person-photo person-placeholder">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="18" r="8" />
+                <path d="M9 42c1.8-8 7.6-12 15-12s13.2 4 15 12" />
+              </svg>
+            </div>
+            <p class="person-role">Panelist 3</p>
+            <h3>To be announced</h3>
+          </article>
+          <article class="person speaker-tba">
+            <div class="person-photo person-placeholder">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="18" r="8" />
+                <path d="M9 42c1.8-8 7.6-12 15-12s13.2 4 15 12" />
+              </svg>
+            </div>
+            <p class="person-role">Panelist 4</p>
+            <h3>To be announced</h3>
+          </article>
         </div>
       </section>
       <section
@@ -672,7 +721,7 @@
       >
         <div class="section-heading">
           <div>
-            <p class="section-index">05 / ORGANIZING COMMITTEE</p>
+            <p class="section-index"><span>06</span>Organizing committee</p>
             <h2 id="organizers-title">
               Different perspectives.<br />
               <em>A shared ambition.</em>
@@ -685,182 +734,261 @@
         </div>
         <div class="people-grid">
           <article class="person">
-            <a
+            <img
               class="person-photo"
-              href="https://scholar.google.com/citations?user=NWq7sGMAAAAJ&hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Yaxuan Kong — Google Scholar"
-              ><img
-                src="assets/yaxuan-kong.jpg"
-                width="480"
-                height="480"
-                loading="lazy"
-                alt="Yaxuan Kong"
-              /><span class="person-arrow" aria-hidden="true">↗</span></a
-            >
-            <h3>Yaxuan Kong</h3>
+              src="assets/yaxuan-kong.jpg"
+              width="480"
+              height="480"
+              loading="lazy"
+              alt=""
+            />
+            <h3>
+              <a
+                href="https://www.linkedin.com/in/yaxuan-kong-167842150/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Yaxuan Kong — LinkedIn"
+                >Yaxuan Kong <span aria-hidden="true">↗</span></a
+              >
+            </h3>
+            <p class="person-affiliation">
+              University of Oxford<br /><a
+                href="https://finhorizons.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >FinHorizons Foundation</a
+              >
+            </p>
+            <p class="person-role">Workshop Chair</p>
+          </article>
+          <article class="person">
+            <img
+              class="person-photo"
+              src="assets/yichen-li.jpg"
+              width="480"
+              height="480"
+              loading="lazy"
+              alt=""
+            />
+            <h3>
+              <a
+                href="https://www.linkedin.com/in/yichen-li-ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Yichen Li — LinkedIn"
+                >Yichen Li <span aria-hidden="true">↗</span></a
+              >
+            </h3>
+            <p class="person-affiliation">
+              <a
+                href="https://finhorizons.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >FinHorizons Foundation</a
+              >
+            </p>
+            <p class="person-role">Workshop Chair<br />Industry Outreach & Sponsorship</p>
+          </article>
+          <article class="person">
+            <img
+              class="person-photo"
+              src="assets/stefan-zohren.jpg"
+              width="480"
+              height="480"
+              loading="lazy"
+              alt=""
+            />
+            <h3>
+              <a
+                href="https://eng.ox.ac.uk/people/stefan-zohren"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Stefan Zohren — University of Oxford profile"
+                >Stefan Zohren <span aria-hidden="true">↗</span></a
+              >
+            </h3>
             <p class="person-affiliation">University of Oxford</p>
-            <p class="person-role">Workshop chair</p>
+            <p class="person-role">Senior Advisor</p>
           </article>
           <article class="person">
-            <div class="person-photo">
-              <img
-                src="assets/yichen-li.jpg"
-                width="480"
-                height="480"
-                loading="lazy"
-                alt="Yichen Li"
-              />
-            </div>
-            <h3>Yichen Li</h3>
-            <p class="person-affiliation">FinHorizons Foundation</p>
-            <p class="person-role">Workshop chair · Industry outreach & sponsorship</p>
-          </article>
-          <article class="person">
-            <a
+            <img
               class="person-photo"
-              href="https://scholar.google.com/citations?user=mtNQD-8AAAAJ&hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Stefan Zohren — Google Scholar"
-              ><img
-                src="assets/stefan-zohren.jpg"
-                width="480"
-                height="480"
-                loading="lazy"
-                alt="Stefan Zohren"
-              /><span class="person-arrow" aria-hidden="true">↗</span></a
-            >
-            <h3>Stefan Zohren</h3>
-            <p class="person-affiliation">University of Oxford</p>
-            <p class="person-role">Senior advisor</p>
-          </article>
-          <article class="person">
-            <a
-              class="person-photo"
-              href="https://tsi-yoontae.github.io/#members"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Yoontae Hwang — lab website"
-              ><img
-                src="assets/yoontae-hwang.jpg"
-                width="480"
-                height="480"
-                loading="lazy"
-                alt="Yoontae Hwang"
-              /><span class="person-arrow" aria-hidden="true">↗</span></a
-            >
-            <h3>Yoontae Hwang</h3>
+              src="assets/yoontae-hwang.jpg"
+              width="480"
+              height="480"
+              loading="lazy"
+              alt=""
+            />
+            <h3>
+              <a
+                href="https://tsi-yoontae.github.io/#members"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Yoontae Hwang — lab website"
+                >Yoontae Hwang <span aria-hidden="true">↗</span></a
+              >
+            </h3>
             <p class="person-affiliation">Pusan National University</p>
-            <p class="person-role">Submissions, website & publicity</p>
+            <p class="person-role">Submissions, Website & Publicity</p>
           </article>
           <article class="person">
-            <a
+            <img
               class="person-photo"
-              href="https://sites.google.com/site/qingsongwen8/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Qingsong Wen — personal website"
-              ><img
-                src="assets/qingsong-wen.jpg"
-                width="480"
-                height="480"
-                loading="lazy"
-                alt="Qingsong Wen"
-              /><span class="person-arrow" aria-hidden="true">↗</span></a
-            >
-            <h3>Qingsong Wen</h3>
-            <p class="person-affiliation">Squirrel Ai Learning<br />East China Normal University</p>
-            <p class="person-role">AAAI coordination</p>
+              src="assets/qingsong-wen.jpg"
+              width="480"
+              height="480"
+              loading="lazy"
+              alt=""
+            />
+            <h3>
+              <a
+                href="https://sites.google.com/site/qingsongwen8/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Qingsong Wen — personal website"
+                >Qingsong Wen <span aria-hidden="true">↗</span></a
+              >
+            </h3>
+            <p class="person-affiliation">
+              Squirrel Ai Learning<br />East China Normal University
+            </p>
+            <p class="person-role">AAAI Coordination</p>
           </article>
         </div>
         <div class="community-note">
           <p>Building on a shared research community.</p>
-          <a
-            class="text-link"
-            href="https://icaif-25-rtfs.github.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >ICAIF 2025 · Rethinking Financial Time-Series
-            <span aria-hidden="true">↗</span></a
-          >
+          <div class="community-links">
+            <a
+              class="text-link"
+              href="https://finhorizons.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >FinHorizons Foundation <span aria-hidden="true">↗</span></a
+            ><a
+              class="text-link"
+              href="https://icaif-25-rtfs.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ICAIF 2025 · Rethinking Financial Time-Series
+              <span aria-hidden="true">↗</span></a
+            >
+          </div>
         </div>
       </section>
       <section
-        class="committee-section wrap"
+        class="section wrap committee-section"
         id="committee"
         aria-labelledby="committee-title"
       >
-        <div class="committee-copy">
-          <p class="section-index">06 / PROGRAM COMMITTEE</p>
+        <div>
+          <p class="section-index"><span>07</span>Program committee</p>
           <h2 id="committee-title">
             Expertise behind<br />
             <em>every review.</em>
           </h2>
-          <p>
-            We are assembling a program committee spanning machine learning,
-            computational finance, and financial NLP to support thoughtful,
-            rigorous peer review.
-          </p>
-        </div>
-        <div class="committee-status">
-          <span class="committee-mark" aria-hidden="true"
-            ><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
-            ><i></i></span
-          ><span class="badge">Committee in formation</span>
-          <h3>
-            Help shape<br />
-            the program.
-          </h3>
-          <p>
-            Share your research background and paper-bidding capacity to express
-            your interest in joining the Program Committee.
+          <p class="committee-lead">
+            Help shape the FinFM program. We are inviting reviewers who can give
+            careful, constructive feedback on work at the meeting point of AI
+            and finance.
           </p>
           <a
-            class="button button-dark committee-apply"
+            class="button button-dark"
             href="https://docs.google.com/forms/d/e/1FAIpQLSdWEmFMBN3IYrSvQPDWwwyc_pkfj-sQS8U26I1dKXxN2pD4YQ/viewform?usp=header"
             target="_blank"
             rel="noopener noreferrer"
             >Join the Program Committee <span aria-hidden="true">↗</span></a
           >
-          <p class="committee-note">
-            The organizers will assess the quality and relevance of applicants'
-            publications before confirming PC appointments. Applying does not
-            guarantee membership. Confirmed members and affiliations will be
-            announced here.
-          </p>
+        </div>
+        <div class="committee-body">
+          <dl class="facts committee-facts">
+            <div>
+              <dt>Who</dt>
+              <dd>
+                Researchers and practitioners in machine learning,
+                computational finance and financial NLP
+              </dd>
+            </div>
+            <div>
+              <dt>Reviewing</dt>
+              <dd>
+                Double-blind reviews on OpenReview. You tell us how many papers
+                you can take when you apply.
+              </dd>
+            </div>
+            <div>
+              <dt>When</dt>
+              <dd>
+                Between the submission deadline on 20 November and author
+                notification on 2 December 2026
+              </dd>
+            </div>
+            <div>
+              <dt>Selection</dt>
+              <dd>
+                The organizers review each applicant's publications before
+                confirming appointments. Applying does not guarantee a place.
+                Confirmed members will be listed here.
+              </dd>
+            </div>
+          </dl>
         </div>
       </section>
       <section
-        class="contact-section"
-        id="contact"
-        aria-labelledby="contact-title"
+        class="sponsors-section"
+        id="sponsors"
+        aria-labelledby="sponsors-title"
       >
-        <div class="wrap contact-inner">
-          <div>
-            <p class="section-index">LET’S ADVANCE FINANCIAL AI</p>
-            <h2 id="contact-title">
-              Good research starts<br />
-              <em>with a conversation.</em>
+        <div class="wrap section sponsors-layout">
+          <div class="sponsors-intro">
+            <p class="section-index"><span>08</span>Call for sponsors</p>
+            <h2 id="sponsors-title">
+              Partner with<br />
+              <em>FinFM.</em>
             </h2>
             <p>
-              For workshop, submission, and participation inquiries,<br />
-              get in touch with the organizing committee.
+              We are looking for sponsors who share our commitment to rigorous,
+              reliable AI in finance. Sponsorship helps us recognize outstanding
+              work and bring researchers, practitioners and regulators together.
+              Every partnership is shaped around your goals.
             </p>
+            <div class="sponsors-contact">
+              <a
+                class="button button-dark"
+                href="mailto:sponsorship@finhorizons.org?subject=FinFM%202027%20sponsorship"
+                >Get in touch <span aria-hidden="true">↗</span></a
+              >
+              <a class="sponsor-email" href="mailto:sponsorship@finhorizons.org"
+                >sponsorship@finhorizons.org</a
+              >
+            </div>
           </div>
-          <div class="contact-links">
-            <a href="mailto:yaxuan.kong@eng.ox.ac.uk"
-              ><span><small>PROGRAM & GENERAL INQUIRIES</small>Yaxuan Kong</span
-              ><span aria-hidden="true">↗</span></a
-            ><a href="mailto:qingsongedu@gmail.com"
-              ><span><small>WORKSHOP COORDINATION</small>Qingsong Wen</span
-              ><span aria-hidden="true">↗</span></a
-            ><a href="mailto:yoontae.hwang@pusan.ac.kr"
-              ><span><small>SUBMISSIONS & WEBSITE</small>Yoontae Hwang</span
-              ><span aria-hidden="true">↗</span></a
-            >
-          </div>
+          <ol class="sponsor-list" aria-label="Sponsorship opportunities">
+            <li>
+              <span class="sponsor-number">01</span>
+              <h3>Awards</h3>
+              <p>Sponsor the Best Paper Award or the Best Benchmark Award.</p>
+            </li>
+            <li>
+              <span class="sponsor-number">02</span>
+              <h3>Industry Session</h3>
+              <p>Present technical work from your team in the Industry Session.</p>
+            </li>
+            <li>
+              <span class="sponsor-number">03</span>
+              <h3>Reception</h3>
+              <p>Host an invitation-only evening reception for workshop attendees.</p>
+            </li>
+            <li>
+              <span class="sponsor-number">04</span>
+              <h3>Recognition</h3>
+              <p>Your logo on the FinFM website, in the opening and closing remarks, and in the online proceedings.</p>
+            </li>
+            <li>
+              <span class="sponsor-number">05</span>
+              <h3>Connections</h3>
+              <p>Meet the people behind the work, and connect with attendees who agree to share their contact details.</p>
+            </li>
+          </ol>
         </div>
       </section>
     </main>
@@ -872,7 +1000,16 @@
       >
       <p>
         Foundation Models and Generative AI for Finance<br />
-        <span>AAAI 2027 · Montréal, Canada</span>
+        <span>AAAI 2027 · Montréal, Canada</span><br />
+        <span
+          >Organized with
+          <a
+            href="https://finhorizons.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >FinHorizons Foundation <span aria-hidden="true">↗</span></a
+          ></span
+        >
       </p>
       <a class="text-link" href="#home"
         >Back to top <span aria-hidden="true">↑</span></a

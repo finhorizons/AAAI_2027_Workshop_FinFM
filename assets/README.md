@@ -24,7 +24,8 @@ Generation prompt:
 
 ## Fonts
 
-- **DM Sans**: Google Fonts, SIL Open Font License 1.1. See `DM-Sans-LICENSE.txt`.
-- **Instrument Serif**: Google Fonts, SIL Open Font License 1.1. See `Instrument-Serif-LICENSE.txt`.
+- **DM Serif Display** (headings): Google Fonts, SIL Open Font License 1.1. See `DM-Serif-Display-LICENSE.txt`.
+- **Manrope** (body text, variable weight): Google Fonts, SIL Open Font License 1.1. See `Manrope-LICENSE.txt`.
+- **DM Mono** (labels, dates, and times): Google Fonts, SIL Open Font License 1.1. See `DM-Mono-LICENSE.txt`.
 
-The fonts are hosted locally. The FinFM symbol and topic diagrams are original SVG/CSS graphics created for this website.
+The fonts are hosted locally as Latin-subset WOFF2 files. The FinFM symbol and hero icons are original SVG/CSS graphics created for this website.
