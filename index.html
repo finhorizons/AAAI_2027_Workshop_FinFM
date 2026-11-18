@@ -43,7 +43,7 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="styles.css?v=20261024-faq" />
+    <link rel="stylesheet" href="styles.css?v=20261118-schedule" />
     <script src="script.js?v=20261024-faq" defer></script>
   </head>
   <body>
@@ -603,24 +603,25 @@
             </div>
           </div>
           <div class="schedule-columns">
-            <table class="schedule-table" aria-describedby="program-note">
-              <caption>Morning · 09:00–12:30</caption>
+            <div class="schedule-col">
+            <p class="schedule-caption" id="schedule-morning">Morning · 08:50–12:30</p>
+            <table class="schedule-table" aria-labelledby="schedule-morning" aria-describedby="program-note">
               <tbody>
                 <tr>
-                  <td><time datetime="09:00">09:00</time>–<time datetime="09:10">09:10</time></td>
+                  <td><time datetime="08:50">08:50</time>–<time datetime="09:00">09:00</time></td>
                   <td><span class="session-title">Opening remarks</span></td>
                 </tr>
                 <tr>
-                  <td><time datetime="09:10">09:10</time>–<time datetime="09:40">09:40</time></td>
+                  <td><time datetime="09:00">09:00</time>–<time datetime="09:30">09:30</time></td>
                   <td><span class="session-title">Keynote 1</span></td>
                 </tr>
                 <tr>
-                  <td><time datetime="09:40">09:40</time>–<time datetime="10:25">10:25</time></td>
-                  <td><span class="session-title">Oral session I</span><span class="session-detail">3 papers · 15 minutes each</span></td>
+                  <td><time datetime="09:30">09:30</time>–<time datetime="09:50">09:50</time></td>
+                  <td><span class="session-title">Oral session I</span><span class="session-detail">2 papers · 10 minutes each</span></td>
                 </tr>
                 <tr>
-                  <td><time datetime="10:25">10:25</time>–<time datetime="10:30">10:30</time></td>
-                  <td><span class="session-title">Poster spotlight I</span><span class="session-detail">30-second introductions</span></td>
+                  <td><time datetime="09:50">09:50</time>–<time datetime="10:30">10:30</time></td>
+                  <td><span class="session-title">Industry session</span><span class="session-detail">2 talks · 20 minutes each</span></td>
                 </tr>
                 <tr class="schedule-break">
                   <td><time datetime="10:30">10:30</time>–<time datetime="11:00">11:00</time></td>
@@ -636,12 +637,14 @@
                 </tr>
                 <tr>
                   <td><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30</time></td>
-                  <td><span class="session-title">Oral session II</span><span class="session-detail">2 papers · 15 minutes each</span></td>
+                  <td><span class="session-title">Oral session II</span><span class="session-detail">3 papers · 10 minutes each</span></td>
                 </tr>
               </tbody>
             </table>
-            <table class="schedule-table" aria-describedby="program-note">
-              <caption>Afternoon · 12:30–17:00</caption>
+            </div>
+            <div class="schedule-col">
+            <p class="schedule-caption" id="schedule-afternoon">Afternoon · 12:30–17:00</p>
+            <table class="schedule-table" aria-labelledby="schedule-afternoon" aria-describedby="program-note">
               <tbody>
                 <tr class="schedule-break">
                   <td><time datetime="12:30">12:30</time>–<time datetime="14:00">14:00</time></td>
@@ -657,7 +660,7 @@
                 </tr>
                 <tr>
                   <td><time datetime="15:00">15:00</time>–<time datetime="15:30">15:30</time></td>
-                  <td><span class="session-title">Industry session</span></td>
+                  <td><span class="session-title">Oral session III</span><span class="session-detail">3 papers · 10 minutes each</span></td>
                 </tr>
                 <tr class="schedule-break">
                   <td><time datetime="15:30">15:30</time>–<time datetime="16:00">16:00</time></td>
@@ -673,6 +676,7 @@
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
           <p class="program-footnote" id="program-note">
             All times are local to Montréal. Session times are provisional. Speakers, talk titles, and accepted
@@ -680,8 +684,9 @@
           </p>
           <p class="program-footnote">
             Keynotes include 25 minutes of presentation and 5 minutes of Q&A.
-            Oral presentations include 10 minutes of presentation and 5 minutes
-            of Q&A.
+            Industry talks include 15 minutes of presentation and 5 minutes of
+            Q&A. Oral presentations include 8&nbsp;minutes of presentation and
+            2&nbsp;minutes of Q&A.
           </p>
           <p class="program-footnote">
             There are no criteria to attend beyond AAAI-27 registration. Anyone
@@ -704,7 +709,7 @@
             </h2>
           </div>
           <p>
-            Profiles of the keynote speakers, the industry session speaker, and
+            Profiles of the keynote speakers, the industry session speakers, and
             the panelists will be posted here once they are confirmed.
           </p>
         </div>
