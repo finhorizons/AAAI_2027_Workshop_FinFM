@@ -491,6 +491,10 @@ button:focus-visible {
 .deadline-inner strong {
   font-weight: 700;
 }
+.deadline-inner .strip-old {
+  margin-right: 6px;
+  opacity: 0.6;
+}
 .deadline-inner > a {
   display: inline-flex;
   gap: 10px;
@@ -786,6 +790,18 @@ button:focus-visible {
 }
 .date-highlight time {
   color: var(--accent);
+}
+.date-highlight time {
+  display: inline-block;
+}
+.date-old {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: var(--muted);
+  text-decoration: line-through;
 }
 .date-detail {
   display: block;
