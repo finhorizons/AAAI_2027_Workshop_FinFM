@@ -4,7 +4,6 @@ Website for **FinFM: Foundation Models and Generative AI for Finance**, a worksh
 
 - **Website:** https://finfm.finhorizons.org/
 - **Submit a paper:** [FinFM on OpenReview](https://openreview.net/group?id=AAAI.org/2027/Workshop/FinFM)
-- **Join the Program Committee:** [interest form](https://docs.google.com/forms/d/e/1FAIpQLSdWEmFMBN3IYrSvQPDWwwyc_pkfj-sQS8U26I1dKXxN2pD4YQ/viewform?usp=header)
 
 ## About this repository
 
