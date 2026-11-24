@@ -3,7 +3,7 @@
 Website for **FinFM: Foundation Models and Generative AI for Finance**, a workshop at AAAI-27 in Montréal, Canada.
 
 - **Website:** https://finfm.finhorizons.org/
-- **Submit a paper:** [FinFM on OpenReview](https://openreview.net/group?id=AAAI.org/2027/Workshop/FinFM)
+- **OpenReview:** [FinFM venue](https://openreview.net/group?id=AAAI.org/2027/Workshop/FinFM)
 
 ## About this repository
 
